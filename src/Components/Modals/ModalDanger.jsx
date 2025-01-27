@@ -1,7 +1,7 @@
 import { motion } from "motion/react"
 
 // eslint-disable-next-line react/prop-types
-const ModalInfo = ({ visible, message, onClose }) => {
+const ModalDanger = ({ visible, message, onClose }) => {
     if (!visible) {
         return null;
     }
@@ -9,7 +9,7 @@ const ModalInfo = ({ visible, message, onClose }) => {
     return (
         <div className="modal-overlay">
             <motion.div
-                className="p-5 alert alert-success"
+                className="p-5 alert alert-danger"
                 initial={{opacity: 0, y: -20}}
                 animate={{opacity: 1, y: 0}}
                 transition={{duration: 0.5}}
@@ -27,4 +27,4 @@ const ModalInfo = ({ visible, message, onClose }) => {
     );
 };
 
-export default ModalInfo;
+export default ModalDanger;
