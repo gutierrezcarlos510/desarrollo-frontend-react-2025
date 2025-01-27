@@ -11,6 +11,7 @@ const Counter = () => {
             <div>
                 <span>{isLogged}</span>
                 <button
+                    className="btn btn-primary"
                     aria-label="Increment value"
                     onClick={() => dispatch(increment())}
                 >
@@ -18,12 +19,14 @@ const Counter = () => {
                 </button>
                 <span>{count}</span>
                 <button
+                    className="btn btn-danger"
                     aria-label="Decrement value"
                     onClick={() => dispatch(decrement())}
                 >
                     Decrement
                 </button>
                 <button
+                    className="btn btn-success"
                     aria-label="Decrement value"
                     onClick={() => dispatch(incrementByAmount(5))}
                 >
